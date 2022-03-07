@@ -912,6 +912,8 @@ body {
 .intro {
   background-color: #141414;
   padding-bottom: 60px;
+  background: url(../img/intro/intro-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 1600px) {

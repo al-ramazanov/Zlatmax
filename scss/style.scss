@@ -785,6 +785,8 @@ $darkColor: #141414;
 .intro {
     background-color: #141414;
     @include adaptiveValue(padding-bottom, 60, 30, 1);
+    background: url(../img/intro/intro-bg.jpg) center no-repeat;
+    background-size: cover;
     // .intro__benefits
 
     &__benefits {

@@ -507,6 +507,10 @@ body {
   margin-bottom: 3px;
 }
 
+.body-header__actions-call a:hover {
+  text-decoration: underline;
+}
+
 .body-header__actions-callback {
   font-weight: 700;
   color: #e8aa31;
@@ -603,6 +607,10 @@ body {
 
 .body-header__cart-order {
   color: #e8aa31;
+}
+
+.body-header__cart-order:hover {
+  text-decoration: underline;
 }
 
 /* ========================================================================================= */
@@ -1283,6 +1291,13 @@ body {
   position: relative;
   min-height: 290px;
   overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.card-catalog:hover {
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-catalog:hover .card-catalog__title::after {
@@ -1613,6 +1628,10 @@ body {
 
 .descr-card__actions-favorit-ico:hover {
   color: #e8aa31;
+}
+
+.descr-card__actions-favorit-ico.favorit-product {
+  color: red;
 }
 
 .descr-card__tocart {

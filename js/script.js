@@ -131,9 +131,13 @@ function documentActions(e) {
             cart.textContent = choosed.length;
         }
 
-
+        e.preventDefault();
     }
     // to cart end
+    if (targetElement.closest('.descr-card__actions-favorit-ico')) {
+        targetElement.classList.toggle('favorit-product');
+        e.preventDefault();
+    }
 
 }
 function getCategoryLength() {

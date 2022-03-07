@@ -426,6 +426,9 @@ $darkColor: #141414;
         a {
             font-weight: 600;
             margin-bottom: 3px;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -527,6 +530,9 @@ $darkColor: #141414;
 
     &__cart-order {
         color: $orangeColor;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -1065,7 +1071,9 @@ $darkColor: #141414;
     position: relative;
     min-height: 290px;
     overflow: hidden;
+    transition: 0.3s ease;
     &:hover {
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
         .card-catalog__title::after {
             width: 100%;
         }
@@ -1354,6 +1362,9 @@ $darkColor: #141414;
         transition: 0.3s ease;
         &:hover {
             color: $orangeColor;
+        }
+        &.favorit-product {
+            color: red;
         }
     }
 

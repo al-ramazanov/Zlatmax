@@ -1,0 +1,279 @@
+$orangeColor: #e8aa31;
+
+.intro-swiper {
+    flex: 1 1 50%;
+    overflow: hidden;
+    padding: 0 20px;
+    align-self: flex-start;
+    // .intro-swiper__body
+
+    &__body {
+    }
+
+    // .intro-swiper__link
+
+    &__link {
+        display: inline-block;
+        background-color: $orangeColor;
+        box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+        border-radius: 3px;
+        padding: 17px 52px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        transition: 0.2s ease;
+        margin-bottom: 30px;
+        &:hover {
+            box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.73);
+        }
+    }
+}
+
+/* ============================================================== */
+
+.hit-swiper {
+    overflow: hidden;
+    padding: 20px;
+    margin: -15px;
+    text-align: center;
+}
+
+.hit-pagination {
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+    @media screen and (max-width: 767px) {
+        margin-top: 25px;
+    }
+    // .hit-pagination__bullet
+
+    &__bullet {
+        width: 18px;
+        height: 2px;
+        background-color: #898989;
+        display: inline-block;
+        transition: 0.2s linear;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            background-color: transparent;
+            top: -20px;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: $orangeColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            opacity: 0;
+        }
+        &.hit-pagination__bullet-active {
+            width: 27px;
+            background-color: $orangeColor;
+            position: relative;
+            &::before {
+                transform: translateY(-50%) translateX(-50%);
+                left: 100%;
+                opacity: 1;
+                transition: left 7s;
+            }
+        }
+    }
+}
+
+.new-swiper {
+    overflow: hidden;
+    padding: 20px;
+    margin: -15px;
+    text-align: center;
+}
+.new-pagination {
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+    // .hit-pagination__bullet
+    @media screen and (max-width: 767px) {
+        margin-top: 25px;
+    }
+    &__bullet {
+        width: 18px;
+        height: 2px;
+        background-color: #898989;
+        display: inline-block;
+        transition: 0.2s linear;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            background-color: transparent;
+            top: -20px;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: $orangeColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            opacity: 0;
+        }
+        &.new-pagination__bullet-active {
+            width: 27px;
+            background-color: $orangeColor;
+            position: relative;
+            &::before {
+                transform: translateY(-50%) translateX(-50%);
+                left: 100%;
+                opacity: 1;
+                transition: left 7s;
+            }
+        }
+    }
+}
+
+.stocks-swiper {
+    overflow: hidden;
+    padding: 20px;
+    margin: -15px;
+    text-align: center;
+}
+.stocks-pagination {
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+    // .hit-pagination__bullet
+    @media screen and (max-width: 767px) {
+        margin-top: 25px;
+    }
+    &__bullet {
+        width: 18px;
+        height: 2px;
+        background-color: #898989;
+        display: inline-block;
+        transition: 0.2s linear;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            background-color: transparent;
+            top: -20px;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: $orangeColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            opacity: 0;
+        }
+        &.stocks-pagination__bullet-active {
+            width: 27px;
+            background-color: $orangeColor;
+            position: relative;
+            &::before {
+                transform: translateY(-50%) translateX(-50%);
+                left: 100%;
+                opacity: 1;
+                transition: left 7s;
+            }
+        }
+    }
+}
+
+.stocks-2-swiper {
+    overflow: hidden;
+    padding: 20px;
+    margin: -15px;
+    text-align: center;
+}
+.stocks-2-pagination {
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+    // .hit-pagination__bullet
+    @media screen and (max-width: 767px) {
+        margin-top: 25px;
+    }
+    &__bullet {
+        width: 18px;
+        height: 2px;
+        background-color: #898989;
+        display: inline-block;
+        transition: 0.2s linear;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            background-color: transparent;
+            top: -20px;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: $orangeColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            opacity: 0;
+        }
+        &.stocks-2-pagination__bullet-active {
+            width: 27px;
+            background-color: $orangeColor;
+            position: relative;
+            &::before {
+                transform: translateY(-50%) translateX(-50%);
+                left: 100%;
+                opacity: 1;
+                transition: left 7s;
+            }
+        }
+    }
+}
+/* ============================================================== */

@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zlatmax</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css"
+        integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/swiperStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top top-header">
+                <div class="container">
+                    <div class="top-header__items">
+                        <ul class="top-header__list header__menu">
+                            <li class="top-header__list-item">
+                                <a href="#" class="top-header__link">О нас</a>
+                            </li>
+                            <li class="top-header__list-item">
+                                <a href="#" class="top-header__link">Оплата и доставка</a>
+                            </li>
+                            <li class="top-header__list-item">
+                                <a href="#" class="top-header__link">Новости</a>
+                            </li>
+                            <li class="top-header__list-item">
+                                <a href="#" class="top-header__link">Контакты</a>
+                            </li>
+                            <li class="top-header__list-item top-header__list-item--catalog">
+                                <a href="#" class="top-header__link">Каталог товаров</a>
+                            </li>
+                            <li class="top-header__list-item top-header__list-item--user">
+                                <a href="#" class="top-header__link">Личный кабинет</a>
+                            </li>
+                        </ul>
+                        <a href="tel:+78007774967" class="top-header__icon-phone icon-phone"></a>
+                        <a href="#" class="top-header__user">
+                            <span class="icon-user top-header__user-ico"></span>
+                            <span class="top-header__user-link">Личный кабинет</span>
+                        </a>
+                        <button class="burger">
+                            <p class="burger__line"></p>
+                        </button>
+                    </div><!-- top-header__items -->
+                </div><!-- container -->
+            </div><!-- header__top top-header -->
+            <div class="header__body body-header">
+                <div class="container body-header__container">
+                    <div class="body-header__logo">
+                        <a href="mainPage.html" class="body-header__logo-ico icon-logo"></a>
+                    </div>
+                    <form action="#" class="body-header__search">
+                        <input type="search" class="body-header__search-input" placeholder="Поиск">
+                    </form>
+                    <div class="body-header__actions">
+                        <div class="body-header__actions-location">
+                            <span class="body-header__actions-ico icon-location"></span>
+                            <p class="body-header__actions-city">Москва</p>
+                        </div>
+                        <div class="body-header__actions-call">
+                            <a href="tel:+78007774967">
+                                8-800-777-49-67
+                            </a>
+                            <a href="#" class="body-header__actions-callback">Заказать звонок</a>
+                            <a href="#" class="body-header__actions-arrow icon-arrow"></a>
+                            <div class="actions-header__dropdown">
+                                <a href="tel:+78007774902">
+                                    8-800-777-49-02
+                                </a>
+                                <p>
+                                    <a href="tel:+78007774903">
+                                        8-800-777-49-03
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="body-header__favorit">
+                            <a href="#" class="body-header__favorit-ico icon-favorit"></a>
+                        </div>
+                        <div class="body-header__cart">
+                            <a href="#" class="body-header__cart-ico icon-cart">
+                                <div class="body-header__cart-counter">0</div>
+                            </a href="#">
+                            <div class="body-header__cart-body">
+                                <p class="body-header__cart-price">0 р.</p>
+                                <a href="#" class="body-header__cart-order">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div> <!-- header__body body-header -->
+            <div class="header__catalog catalog-header">
+                <div class="container">
+                    <ul class="catalog-header__list">
+                        <button class="catalog-header__list-item catalog-header__list-back">Назад</button>
+                        <li class="catalog-header__list-item" data-catalog="submenu-1">Каталог ножей</li>
+                        <li class="catalog-header__list-item" data-catalog="submenu-2">Клинковое оружие</li>
+                        <li class="catalog-header__list-item" data-catalog="submenu-3">Сувенирные изделия</li>
+                        <li class="catalog-header__list-item" data-catalog="submenu-4">Фонари ARMYTEK</li>
+                        <li class="catalog-header__list-item" data-catalog="submenu-5">Сопуствующие товары</li>
+                    </ul>
+                </div>
+                <div class="header__submenu-catalog catalog-submenu">
+                    <div class="container">
+                        <div class="catalog-submenu__categories" data-submenu="submenu-1">
+                            <a href="#" class="catalog-submenu__back">Назад</a>
+                            <a href="#" class="catalog-submenu__category">Категория ножей</a>
+                            <a href="#" class="catalog-submenu__category">Производство ножей</a>
+                            <a href="#" class="catalog-submenu__category">Ножи по маркам стали</a>
+                            <a href="#" class="catalog-submenu__category">Заточка и полировка ножей</a>
+                            <a href="#" class="catalog-submenu__category">Ножевая мастерская</a>
+
+                            <p class="catalog-submenu__item">Разделочные ножи</p>
+                            <p class="catalog-submenu__item">Ножи АИР</p>
+                            <p class="catalog-submenu__item">Ножи из стали 40х102С2М</p>
+                            <p class="catalog-submenu__item">Паста ГОИ</p>
+                            <p class="catalog-submenu__item">Ножевые клинки</p>
+
+                            <p class="catalog-submenu__item">Туристические ножи</p>
+                            <p class="catalog-submenu__item">Ножи ЗИК</p>
+                            <p class="catalog-submenu__item">Ножи из стали 95х18</p>
+                            <p class="catalog-submenu__item">Алмазная паста</p>
+                            <p class="catalog-submenu__item">Заготовки для ножей</p>
+
+                            <p class="catalog-submenu__item">Ножи охотничьи</p>
+                            <p class="catalog-submenu__item">Ножи ЗЗОСС</p>
+                            <p class="catalog-submenu__item">Ножи из стали 100х13м</p>
+                            <p class="catalog-submenu__item">Бруски и камни для заточки</p>
+                            <p class="catalog-submenu__item">Литье для ножей</p>
+
+                            <p class="catalog-submenu__item">Булатные ножи</p>
+                            <p class="catalog-submenu__item">Ножи РОСоружие</p>
+                            <p class="catalog-submenu__item">Ножи из стали 110х18м-ШД</p>
+                            <p class="catalog-submenu__item">Заточные системы</p>
+                            <p class="catalog-submenu__item">Материалы для рукоятей</p>
+
+                            <p class="catalog-submenu__item">Ножи из дамаска</p>
+                            <p class="catalog-submenu__item">Ножи Оружейник</p>
+                            <p class="catalog-submenu__item">Ножи из стали ЭИ-107 ТЦ</p>
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item">Уход за рукоятиями ножей</p>
+
+                            <p class="catalog-submenu__item">Тактического назначения</p>
+                            <p class="catalog-submenu__item">Булат Сергея Баранова</p>
+                            <p class="catalog-submenu__item">Ножи из стали 50х14МФ</p>
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item"></p>
+
+                            <p class="catalog-submenu__item">Метательные ножи</p>
+                            <p class="catalog-submenu__item">Булат Андрея Умерова</p>
+                            <p class="catalog-submenu__item">Ножи из стали AUS-8</p>
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item"></p>
+
+                            <p class="catalog-submenu__item">Мачете и кукри</p>
+                            <p class="catalog-submenu__item">Ножи Златко</p>
+                            <p class="catalog-submenu__item">Ножи из стали К340</p>
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item"></p>
+
+                            <p class="catalog-submenu__item">Ножи кухонные</p>
+                            <p class="catalog-submenu__item">Ножи Стиль-М</p>
+                            <p class="catalog-submenu__item">Ножи из стали M390</p>
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item"></p>
+
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item">Оружейная компания</p>
+                            <p class="catalog-submenu__item">Ножи из стали ЭП-766</p>
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item"></p>
+
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+                        </div> <!-- catalog-submenu__categories -->
+
+                        <div class="catalog-submenu__categories" data-submenu="submenu-2">
+                            <a href="#" class="catalog-submenu__back">Назад</a>
+                            <a href="#" class="catalog-submenu__category">Категория ножей</a>
+                            <a href="#" class="catalog-submenu__category">Производство ножей</a>
+
+
+                            <p class="catalog-submenu__item">Разделочные ножи</p>
+                            <p class="catalog-submenu__item">Ножи АИР</p>
+
+                            <p class="catalog-submenu__item">Туристические ножи</p>
+                            <p class="catalog-submenu__item">Ножи ЗИК</p>
+
+
+                            <p class="catalog-submenu__item">Ножи охотничьи</p>
+                            <p class="catalog-submenu__item">Ножи ЗЗОСС</p>
+
+
+                            <p class="catalog-submenu__item">Булатные ножи</p>
+                            <p class="catalog-submenu__item">Ножи РОСоружие</p>
+
+
+                            <p class="catalog-submenu__item">Ножи из дамаска</p>
+                            <p class="catalog-submenu__item">Ножи Оружейник</p>
+
+
+                            <p class="catalog-submenu__item">Тактического назначения</p>
+                            <p class="catalog-submenu__item">Булат Сергея Баранова</p>
+
+
+                            <p class="catalog-submenu__item">Метательные ножи</p>
+                            <p class="catalog-submenu__item">Булат Андрея Умерова</p>
+
+
+                            <p class="catalog-submenu__item">Мачете и кукри</p>
+                            <p class="catalog-submenu__item">Ножи Златко</p>
+
+
+                            <p class="catalog-submenu__item">Ножи кухонные</p>
+                            <p class="catalog-submenu__item">Ножи Стиль-М</p>
+
+
+                            <p class="catalog-submenu__item"></p>
+                            <p class="catalog-submenu__item">Оружейная компания</p>
+
+
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+                            <a href="#" class="catalog-submenu__link">Смотреть все</a>
+
+                        </div> <!-- catalog-submenu__categories -->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="catalog__page">
+                <div class="container">
+                    <div class="catalog__page-header">
+                        <h2 class="catalog__page-title">
+                            Разделочные ножи
+                        </h2>
+                        <div class="catalog__page-actions">
+                            <div class="page__breads">
+                                <a href="#" class="page__breads-link">Главная</a>
+                                <a href="#" class="page__breads-link active">Разделочные ножи</a>
+                            </div>
+                            <div class="page__sort">
+                                <button class="page__sort-header">
+                                    По популярности
+                                </button>
+                                <ul class="page__sort-list">
+                                    <li class="page__sort-item">По популярности</li>
+                                    <li class="page__sort-item">По дате</li>
+                                    <li class="page__sort-item">По алфавиту</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__page-content content-page">
+                        <div class="content-page__filters page-filters">
+                            <button class="page-filters__header">Фильтр товаров</button>
+                            <div class="page-filters__body">
+                                <div class="page-filters__filter filter">
+                                    <button class="filter__header">
+                                        Цена
+                                    </button>
+                                    <div class="filter__items">
+                                        <div class="filter__inputs-wrapper">
+                                            <input type="number" class="filter__price1 filter__price">
+                                            <input type="number" class="filter__price2 filter__price">
+                                        </div>
+                                        <div class="filter__items-range-slider">
+                                            <div class="filter__items-range" id="priceSlider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-filters__filter filter">
+                                    <button class="filter__header">
+                                        Производство
+                                    </button>
+                                    <div class="filter__items">
+                                        <!-- <div class="filter__item"> -->
+                                        <label for="АиР" class="checkbox__label">
+                                            <input type="checkbox" name="АиР" id="АиР" class="checkbox-input">
+                                            <label for="АиР" class="checkbox-item">
+                                            </label>
+                                            АиР
+                                        </label>
+                                        <label for="Булат Сергея Баранова" class="checkbox__label">
+                                            <input type="checkbox" name="Булат Сергея Баранова"
+                                                id="Булат Сергея Баранова" class="checkbox-input">
+                                            <label for="Булат Умерова" class="checkbox-item">
+                                            </label>
+                                            Булат Сергея Баранова
+                                        </label>
+                                        <label for="Булат Умерова" class="checkbox__label">
+                                            <input type="checkbox" name="Булат Умерова" id="Булат Умерова"
+                                                class="checkbox-input">
+                                            <label for="Булат Умерова" class="checkbox-item">
+                                            </label>
+                                            Булат Умерова
+                                        </label>
+                                        <label for="ЗЗОСС" class="checkbox__label">
+                                            <input type="checkbox" name="ЗЗОСС" id="ЗЗОСС" class="checkbox-input">
+                                            <label for="ЗЗОСС" class="checkbox-item">
+                                            </label>
+                                            ЗЗОСС
+                                        </label>
+                                        <label for="ЗИК" class="checkbox__label">
+                                            <input type="checkbox" name="ЗИК" id="ЗИК" class="checkbox-input">
+                                            <label for="ЗИК" class="checkbox-item">
+                                            </label>
+                                            ЗИК
+                                        </label>
+                                        <label for="ЗЛАТКО" class="checkbox__label">
+                                            <input type="checkbox" name="ЗИК" id="ЗЛАТКО" class="checkbox-input">
+                                            <label for="ЗЛАТКО" class="checkbox-item">
+                                            </label>
+                                            ЗЛАТКО
+                                        </label>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                                <div class="page-filters__filter filter">
+                                    <button class="filter__header">
+                                        Сталь
+                                    </button>
+                                    <div class="filter__items">
+                                        <!-- <div class="filter__item"> -->
+                                        <label for="100Х13М" class="checkbox__label">
+                                            <input type="checkbox" name="100Х13М" id="АиР" class="checkbox-input">
+                                            <label for="100Х13М" class="checkbox-item">
+                                            </label>
+                                            100Х13М
+                                        </label>
+                                        <label for="110Х18М-ШД" class="checkbox__label">
+                                            <input type="checkbox" name="110Х18М-ШД" id="Булат Сергея Баранова"
+                                                class="checkbox-input">
+                                            <label for="110Х18М-ШД" class="checkbox-item">
+                                            </label>
+                                            110Х18М-ШД
+                                        </label>
+                                        <label for="50Х14МФ" class="checkbox__label">
+                                            <input type="checkbox" name="50Х14МФ" id="50Х14МФ" class="checkbox-input">
+                                            <label for="50Х14МФ" class="checkbox-item">
+                                            </label>
+                                            50Х14МФ
+                                        </label>
+                                        <label for="95Х18" class="checkbox__label">
+                                            <input type="checkbox" name="95Х18" id="95Х18" class="checkbox-input">
+                                            <label for="95Х18" class="checkbox-item">
+                                            </label>
+                                            95Х18
+                                        </label>
+                                        <label for="ELMAX" class="checkbox__label">
+                                            <input type="checkbox" name="ELMAX" id="ELMAX" class="checkbox-input">
+                                            <label for="ELMAX" class="checkbox-item">
+                                            </label>
+                                            ELMAX
+                                        </label>
+                                        <label for="Дамаск" class="checkbox__label">
+                                            <input type="checkbox" name="Дамаск" id="Дамаск" class="checkbox-input">
+                                            <label for="Дамаск" class="checkbox-item">
+                                            </label>
+                                            Дамаск
+                                        </label>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-page__products-wrap">
+                            <div class="content-page__products">
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <div class="product__card-pic">
+                                        <img src="../img/hit/hit-1.jpg" alt="#">
+                                    </div>
+                                    <div class="product__card-descr">
+                                        <h5 class="descr-card__title">Нож Лиса</h5>
+                                        <div class="descr-card__info">
+                                            <span>95х18</span> <span>Орех, Алюминий</span>
+                                        </div>
+                                        <div class="descr-card__feedback">
+                                            <div class="descr-card__feedback-rating">
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                                <span class="descr-card__star icon-star"></span>
+                                            </div>
+                                            12 отзывов
+                                        </div>
+                                        <div class="descr-card__actions">
+                                            <p class="descr-card__actions-price">2 719 р.</p>
+                                            <div class="descr-card__actions-compare">
+                                                <a href="#" class="descr-card__actions-compare-ico icon-compare"></a>
+                                                <a href="#" class="descr-card__actions-favorit-ico icon-favorit"></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="descr-card__tocart">
+                                            В корзину
+                                            <span class="descr-card__tocart-ico icon-cart"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-page__products-actions">
+                                <a href="#" class="products-actions__more">Показать больше</a>
+                                <ul class="products-actions__pages-list">
+                                    <a href="#" class="products-actions__pages-prev"></a>
+                                    <li class="products-actions__pages-item">
+                                        <a href="#" class="products-actions__pages-page active">1</a>
+                                    </li>
+                                    <li class="products-actions__pages-item">
+                                        <a href="#" class="products-actions__pages-page">2</a>
+                                    </li>
+                                    <li class="products-actions__pages-item">
+                                        <a href="#" class="products-actions__pages-page">3</a>
+                                    </li>
+                                    <li class="products-actions__pages-item">
+                                        <a href="#" class="products-actions__pages-page">...</a>
+                                    </li>
+                                    <li class="products-actions__pages-item">
+                                        <a href="#" class="products-actions__pages-page">15</a>
+                                    </li>
+                                    <a href="#" class="products-actions__pages-next"></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__items">
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__info">
+                            <h5 class="footer__item-title">ИНФОРМАЦИЯ</h5>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">Златоустовские ножи
+                                        в Москве и Московской
+                                        области
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">Ножевые стали</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">О нас</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">Условия оплаты
+                                        и доставки
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">Политика
+                                        конфиденциальности
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__support">
+                            <h5 class="footer__item-title">СЛУЖБА ПОДДЕРЖКИ</h5>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">
+                                        Контактная информация
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">
+                                        Возврат товара
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">
+                                        Карта сайта
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__additionally">
+                            <h5 class="footer__item-title">ДОПОЛНИТЕЛЬНО</h5>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">
+                                        Подарочные сертификаты
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">
+                                        Партнеры
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">
+                                        Товары со скидкой
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__user">
+                            <h5 class="footer__item-title">ЛИЧНЫЙ КАБИНЕТ</h5>
+                            <ul class="footer__list">
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__link">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__link">
+                                            История заказов
+                                        </a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__link">
+                                            Мои закладки
+                                        </a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__link">
+                                            Рассылка новостей
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__contacts">
+                            <h5 class="footer__item-title">КОНТАКТЫ</h5>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="tel:+78007774967" class="footer__link">
+                                        <span class="icon-phone"></span>8 (800) 777-49-67
+                                    </a>
+                                </li>
+                                <li class=" footer__list-item">
+                                    <a class="footer__link">
+                                        <span class="icon-clock"></span> Пн-Пт<br>
+                                        7:00 - 16:00 (МСК)
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link">
+                                        <span class="icon-location"></span>
+                                        Златоуст,
+                                        ул. Шоссейная,
+                                        д. 1, офис «6Б»
+                                    </a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="mailto:info@zlatmax.ru" mailto class="footer__link">
+                                        <span class="icon-mail"></span>
+                                        info@zlatmax.ru
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__useful">
+                            <h5 class="footer__item-title">ПОЛЕЗНЫЕ ССЫЛКИ</h5>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="#" class="footer__link">Способы оплаты и доставки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__useful">
+                            <h5 class="footer__item-title">НАША ГАРАНТИЯ</h5>
+                            <ul class="footer__list">
+                                <p class="footer__link footer__link-text">
+                                    Недовольны своей покупкой?
+                                    Вы можете вернуть ее в течении
+                                    30 дней с даты получения,
+                                    согласно <a href="#">нашим правилам</a>
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item-column">
+                        <div class="footer__item footer__newsletter">
+                            <h5 class="footer__item-title">НОВОСТНАЯ РАССЫЛКА</h5>
+                            <ul class="footer__list">
+                                <p class="footer__item-subtitle">Подпишитесь прямо сейчас!</p>
+                                <form action="#" class="footer__form" method="post" enctype="multipart/form-data">
+                                    <div class="footer__input-wrapper">
+                                        <input type="mail" class="footer__form-input" placeholder="example@gmail.com">
+                                        <button type="submit" class="footer__form-submit"></button>
+                                    </div>
+                                    <div class="footer__form-checkbox">
+                                        <input type="checkbox" name="agree" id="chekbox">
+                                        <label for="chekbox" class="footer__form-agree-text">
+                                            Я прочитал Условия соглашения и
+                                            согласен с условиями
+                                        </label>
+                                    </div>
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__item footer__social">
+                        <h5 class="footer__item-title">СОЦИАЛЬНЫЕ СЕТИ</h5>
+                        <ul class="footer__list footer__list-soc">
+                            <li class="footer__list-item footer__list-item-soc">
+                                <img src="../img/footer/facebook.png" alt="facebook">
+                            </li>
+                            <li class="footer__list-item footer__list-item-soc">
+                                <img src="../img/footer/viber.png" alt="viber">
+                            </li>
+                            <li class="footer__list-item footer__list-item-soc">
+                                <img src="../img/footer/telegram.png" alt="telegram">
+                            </li>
+                            <li class="footer__list-item footer__list-item-soc">
+                                <img src="../img/footer/whats.png" alt="whatsapp">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="descr">
+                    <p>
+                        Все материалы, размещенные на сайте, носят справочный характер и не являются
+                        публичной офертой, определяемойположениями Статьи 437 Гражданского кодекса Российской Федерации.
+                        При копировании материалов гиперссылка на www.zlatmax.ru обязательна!
+                    </p>
+                    <p>
+                        Златоустовские ножи www.zlatmax.ru ©
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js"
+        integrity="sha512-T5Bneq9hePRO8JR0S/0lQ7gdW+ceLThvC80UjwkMRz+8q+4DARVZ4dqKoyENC7FcYresjfJ6ubaOgIE35irf4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/sliders.js"></script>
+    <script src="../js/noUiSlider.js"></script>
+    <script src="../js/script.js"></script>
+</body>

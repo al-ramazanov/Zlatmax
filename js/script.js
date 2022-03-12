@@ -139,6 +139,7 @@ function documentActions(e) {
         e.preventDefault();
     }
 
+
 }
 function getCategoryLength() {
     const categories = document.querySelectorAll('.catalog-submenu__categories');
@@ -148,7 +149,22 @@ function getCategoryLength() {
     })
 }
 getCategoryLength();
-
+function openFilter(e) {
+    const filters = document.querySelectorAll('.filter');
+    filters.forEach(function (filter) {
+        filter.addEventListener('click', function () {
+            this.classList.toggle('open')
+        })
+    })
+}
+function pageSort() {
+    const sortItem = document.querySelector('.page__sort');
+    sortItem.addEventListener('click', function () {
+        this.classList.toggle('open')
+    })
+}
+pageSort();
+openFilter();
 function openSpoiler() {
     const spoilers = document.querySelectorAll('.footer__item');
     spoilers.forEach(function (spoiler) {
@@ -160,4 +176,5 @@ function openSpoiler() {
         })
     })
 }
-openSpoiler()
+openSpoiler();
+

@@ -152,8 +152,10 @@ getCategoryLength();
 function openFilter(e) {
     const filters = document.querySelectorAll('.filter');
     filters.forEach(function (filter) {
-        filter.addEventListener('click', function () {
-            this.classList.toggle('open')
+        const filterHeader = filter.querySelector('.filter__header');
+        filterHeader.addEventListener('click', function (e) {
+            filter.classList.toggle('open');
+            e.preventDefault();
         })
     })
 }

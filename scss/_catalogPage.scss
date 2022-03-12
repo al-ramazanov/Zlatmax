@@ -274,6 +274,7 @@ input[type="number"]::-webkit-inner-spin-button {
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        transition: 0.3s linear;
         margin-bottom: 20px;
         &::after {
             content: "";
@@ -345,9 +346,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: flex;
         align-items: center;
         gap: 15px;
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
+        margin-bottom: 20px;
     }
 }
 .checkbox-item {
